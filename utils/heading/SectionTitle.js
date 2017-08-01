@@ -17,13 +17,13 @@ export default class SectionTitle extends BaseComponent {
 const styles = StyleSheet.create({
   sectionHeading: {
     backgroundColor: '#ececec',
-    height: 50,
     borderTopWidth: 1,
     borderTopColor: '#f8f8f8',
     justifyContent: "center",
+    padding: 10
   },
   sectionInnerTitle: {
-    marginLeft: 20,
+    paddingHorizontal: 10,
     fontFamily: "Roboto-Medium",
     color: "#4a4a4a",
     fontSize: 14,

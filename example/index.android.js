@@ -11,7 +11,7 @@ import {
   Text,
   View, ScrollView
 } from 'react-native';
-import {BaseComponent, SimpleButton, SectionTitle} from 'react-native-essentials'
+import {BaseComponent, SimpleButton, SectionTitle, StandaloneLabel} from 'react-native-essentials'
 
 export default class example extends BaseComponent {
   renderComponent() {
@@ -19,6 +19,9 @@ export default class example extends BaseComponent {
       <View style={styles.container}>
         <ScrollView style={{flex: 1, borderColor: 'orange', borderWidth: 2}}>
           <SectionTitle name="Heading" />
+          <Text>{'<SectionTitle name="Heading" />'}</Text>
+          <StandaloneLabel name="My Label" />
+          <Text>{'<StandaloneLabel name="My Label" />'}</Text>
         </ScrollView>
       </View>
     );

@@ -13,7 +13,8 @@
         "dropdown": "fields/dropdown",
         "switch": "fields/switch",
         "text": "fields/text",
-        "heading": "utils/heading"
+        "heading": "utils/heading",
+        "label": "utils/label"
       },
       "extensions": [".android.js", ".ios.js", ".js"]
     }]

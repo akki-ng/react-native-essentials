@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
 import {View, Text, StyleSheet} from 'react-native';
-import BaseComponent from 'src/components/BaseComponent'
+import BaseComponent from 'BaseComponent'
 
 export default class StandaloneLabel extends BaseComponent {
   renderComponent() {
     return(
-      <Text style={styles.label}>
+      <Text style={[styles.label, this.props.labelStyle]}>
         {this.props.name}
       </Text>
     )
