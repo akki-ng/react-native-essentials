@@ -1,0 +1,48 @@
+{
+  "name": "react-native-essentials",
+  "version": "1.0.0",
+  "description": "All essential elements available to develop react native apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akki-ng/react-native-essentials.git"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "ios",
+    "essentials",
+    "elements",
+    "base",
+    "ui-kit"
+  ],
+  "author": "Akshay Sharma <mailto.akshaysharma@yahoo.com> (https://www.linkedin.com/in/akshayaprakash-sharma-03393674)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akki-ng/react-native-essentials/issues"
+  },
+  "homepage": "https://github.com/akki-ng/react-native-essentials#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "react-native-action-sheet-xg": "0.0.1",
+    "react-native-datepicker": "^1.6.0",
+    "react-native-document-picker": "^2.0.0",
+    "react-native-file-opener": "^0.2.0",
+    "react-native-image-crop-picker": "^0.14.1",
+    "react-native-progress": "^3.2.1",
+    "react-native-spinkit": "^1.0.3",
+    "react-native-tab-view": "0.0.67",
+    "react-test-renderer": "^16.0.0-alpha.12"
+  },
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-preset-react-native": "^2.0.0",
+    "jest": "^20.0.4",
+    "react": "^16.0.0-alpha.12",
+    "react-native": "^0.46.4"
+  }
+}
