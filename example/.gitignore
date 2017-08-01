@@ -36,7 +36,6 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
-**/node_modules/
 # BUCK
 buck-out/
 \.buckd/
@@ -52,5 +51,3 @@ buck-out/
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
-
-package-lock.json

@@ -2,7 +2,7 @@
   "presets": ["react-native"],
   "plugins": [
     ["module-resolver", {
-      "root": ["./"],
+      "root": ["./**/react-native-essentials"],
       "alias": {
         "utils": "./utils"
       },

@@ -1,6 +1,6 @@
 {
   "name": "react-native-essentials",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "All essential elements available to develop react native apps",
   "main": "index.js",
   "scripts": {
