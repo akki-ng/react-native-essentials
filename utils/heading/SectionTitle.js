@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import {View, Text, StyleSheet} from 'react-native';
-import BaseComponent from 'src/components/BaseComponent'
+import BaseComponent from 'BaseComponent'
 
 export default class SectionTitle extends BaseComponent {
   renderComponent() {
     return(
       <View style={[styles.sectionHeading, this.props.style]}>
-        <Text style={styles.sectionInnerTitle}>
+        <Text style={[styles.sectionInnerTitle, this.props.headingTextStyle]}>
           {this.props.name}
         </Text>
       </View>

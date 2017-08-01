@@ -4,7 +4,16 @@
     ["module-resolver", {
       "root": ["./**/react-native-essentials"],
       "alias": {
-        "utils": "./utils"
+        "utils": "./utils",
+        "button": "utils/button",
+        "card": "utils/card",
+        "fields": "utils/fields",
+        "checkbox": "fields/checkbox",
+        "date": "fields/date",
+        "dropdown": "fields/dropdown",
+        "switch": "fields/switch",
+        "text": "fields/text",
+        "heading": "utils/heading"
       },
       "extensions": [".android.js", ".ios.js", ".js"]
     }]

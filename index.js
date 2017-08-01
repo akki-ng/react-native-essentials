@@ -1,5 +1,8 @@
-import BaseComponent from './BaseComponent'
-import SimpleButton from 'utils/button/SimpleButton'
-
+import BaseComponent from 'BaseComponent'
 exports.BaseComponent = BaseComponent
+
+import SimpleButton from 'button/SimpleButton'
 exports.SimpleButton = SimpleButton
+
+import SectionTitle from 'heading/SectionTitle'
+exports.SectionTitle = SectionTitle
