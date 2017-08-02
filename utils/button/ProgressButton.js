@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {View, StyleSheet, TouchableOpacity,
         Text, ActivityIndicator} from 'react-native'
 
-import BaseComponent from 'src/components/BaseComponent';
+import BaseComponent from 'BaseComponent';
 
 var Spinner = require('react-native-spinkit');
 
@@ -71,7 +71,7 @@ export default class ProgressButton extends BaseComponent {
 
   _renderSuccessButton() {
     return(
-        <View style={[styles.button, styles.buttonEnable, this.props.enabledStyle, this.props.style]} >
+        <View style={[styles.button, styles.buttonEnable, this.props.enabledStyle, this.props.style, styles.successButtonStyle, this.props.successButtonStyle]} >
           <Text style={[styles.buttonEnabledText, this.props.enabledTextStyle]}>{this.state.text}</Text>
         </View>
       )
@@ -152,13 +152,16 @@ var styles = StyleSheet.create({
   errorButtonStyle: {
     backgroundColor: "#d60315",
   },
+  successButtonStyle: {
+
+  },
   busyButtonStyle: {
     backgroundColor: "#039ad6"
   }
 });
 
 ProgressButton.defaultProps = {
-  text: 'Button',
+  text: 'Progress Button',
   buttonState: 'idle', //'busy', 'success', 'error'
   style: styles.button,
   spinnerType: 'Wave', //['CircleFlip', 'Bounce', 'Wave', 'WanderingCubes', 'Pulse', 'ChasingDots', 'ThreeBounce', 'Circle', '9CubeGrid', 'WordPress', 'FadingCircle', 'FadingCircleAlt', 'Arc', 'ArcAlt'],
@@ -169,8 +172,12 @@ ProgressButton.defaultProps = {
   enabledTextStyle: styles.buttonEnabledText,
   disabledTextStyle: styles.buttonDisabledText,
   errorButtonStyle: styles.errorButtonStyle,
+  successButtonStyle: styles.successButtonStyle,
   busyButtonStyle: styles.busyButtonStyle,
   onPress: function(buttonRef) {
-    alert("No action binded");
+    buttonRef.busy();
+    setTimeout(function() {
+      buttonRef.success()
+    }, 2000)
   }
 }

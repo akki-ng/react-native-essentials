@@ -63,7 +63,7 @@ var styles = StyleSheet.create({
 });
 
 SimpleButton.defaultProps = {
-  text: 'Button',
+  text: 'Simple Button',
   disabled: false,
   style: styles.button,
   enabledStyle: styles.buttonEnable,

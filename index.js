@@ -4,6 +4,9 @@ exports.BaseComponent = BaseComponent
 import SimpleButton from 'button/SimpleButton'
 exports.SimpleButton = SimpleButton
 
+import ProgressButton from 'button/ProgressButton'
+exports.ProgressButton = ProgressButton
+
 import SectionTitle from 'heading/SectionTitle'
 exports.SectionTitle = SectionTitle
 
