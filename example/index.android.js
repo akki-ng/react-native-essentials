@@ -11,7 +11,7 @@ import {
   Text,
   View, ScrollView
 } from 'react-native';
-import {BaseComponent, SimpleButton, ProgressButton, SectionTitle, StandaloneLabel} from 'react-native-essentials'
+import {BaseComponent, SimpleButton, ProgressButton, AbstractCard, SectionTitle, StandaloneLabel} from 'react-native-essentials'
 
 export default class example extends BaseComponent {
   renderComponent() {
@@ -26,6 +26,10 @@ export default class example extends BaseComponent {
           <Text>{'<SimpleButton />'}</Text>
           <ProgressButton />
           <Text>{'<ProgressButton />'}</Text>
+          <AbstractCard style={{margin: 5}}>
+            <Text>I'm in Card</Text>
+            <Text>Render any React componet in the card</Text>
+          </AbstractCard>
         </ScrollView>
       </View>
     );

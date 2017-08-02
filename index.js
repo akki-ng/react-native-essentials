@@ -12,3 +12,6 @@ exports.SectionTitle = SectionTitle
 
 import StandaloneLabel from 'label/StandaloneLabel'
 exports.StandaloneLabel = StandaloneLabel
+
+import AbstractCard from 'card/AbstractCard'
+exports.AbstractCard = AbstractCard

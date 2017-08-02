@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {View, StyleSheet } from 'react-native'
 
-import BaseComponent from 'src/components/BaseComponent'
+import BaseComponent from 'BaseComponent'
 
 export default class AbstractCard extends BaseComponent {
   renderComponent() {
@@ -23,6 +23,9 @@ export default class AbstractCard extends BaseComponent {
 }
 
 AbstractCard.defaultProps = {
+  style: {
+
+  }
 }
 
 var styles = StyleSheet.create({
